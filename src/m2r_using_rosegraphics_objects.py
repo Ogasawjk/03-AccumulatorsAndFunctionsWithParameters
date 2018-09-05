@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# DONE:2
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
@@ -27,43 +27,43 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
 #           does the positive Y-axis point?
 #              DOWN
 #
-#     b. Write a line of code that constructs a RoseWindow object:
-        #window = rg.RoseWindow()
-#
+#     b. Write a line of code that constructs a RoseWindow object:  window = rg.RoseWindow()
+
 #     c. What is the default height of a RoseWindow?
 #        (Use the HOVER trick to determine the answer to this question.)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            400 x 300
 #
 #     d. Write a line of code that construct a RoseWindow object
 #        whose height is 100:  (Use the HOVER trick to figure it out)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            window = rg.RoseWindow(400,100)
 #
 #     e. Use the DOT trick to answer the following:
 #
 #          -- Write the names of two types of graphics objects that
 #             you can construct OTHER than Circle and Point:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                squares
+#               ellipses
 #
 #          -- Write the names of three METHODs that Circle objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                move_by ; move_center_to ; clone
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle
 #             objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                fill_color, outline_color, radius
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            SHOWS THE OBJECTS THAT ARE ATTACHED TO THE CANVAS
 #
 #     g. When is a RoseWindow close_on_mouse_click method call
 #        necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
-#
+#            WHEN YOU HAVE LONG CODE THAT MAY NEED TO BE TERMINATED BEFORE THE FINISH
+#            A PROCESS GOT BACKED UP SO YOU CLICK THE WINDOW TO CLOSE INSTEAD OF WAITING
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
 #
 #   When you are confident that you have written correct answers
 #   to the above questions (ASK QUESTIONS AS NEEDED!),
-#   change the above TODO to DONE.
+#   change the above DONE
 #
 ########################################################################
 
@@ -94,14 +94,14 @@ def example2():
     # Construct the window in which objects will be drawn.
     # ------------------------------------------------------------------
     window = rg.RoseWindow()
-
+rg.Circle.
     # ------------------------------------------------------------------
     # Construct some rg.Point objects.
     # Note: the y-axis goes DOWN from the TOP.
     # ------------------------------------------------------------------
     point1 = rg.Point(1, 1)
     point2 = rg.Point(200, 50)
-
+    rg.Circle.
     # ------------------------------------------------------------------
     # A RoseGraphics object is not associated with a window,
     # and hence are not drawn, until you ATTACH it to a window.
@@ -117,7 +117,6 @@ def example2():
     window.render()
 
     window.close_on_mouse_click()
-
 
 def example3():
     """ Displays a Circle and a Rectangle. """
@@ -137,7 +136,7 @@ def example3():
     circle = rg.Circle(center_point, radius)
     circle.fill_color = 'green'
     circle.attach_to(window)
-
+    rg.E
     # ------------------------------------------------------------------
     # Rectangle: needs two opposite corners.
     # ------------------------------------------------------------------
